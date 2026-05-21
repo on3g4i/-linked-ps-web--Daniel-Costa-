@@ -28,10 +28,53 @@
     <main>
         <section></section>
         <section></section>
-        <section></section>
+        <section id="contato" class="image-logo mt-10 mb-10 text-white flex flex-col items-center gap-10">
+            <div class="flex justify-evenly gap-20">
+                <div class="bg-[#004346] p-8 rounded-[1vw] w-80 ">
+                    <h2 class="text-lg m-2">Visite-nos</h2>
+                    <address class="p-3">
+                        <h3 class="text-xl flex items-center m-1">
+                            <img src="../assets/images/pin-icon.png" alt="pino-icon" class="size-6">
+                            Endereço
+                        </h3>
+                        <div class="text-lg">
+                            <div>Rua, número</div>
+                            <div>Bairro</div>
+                            <div>CEP:40028922</div>
+                        </div>
+                    </address>
+                </div>
+                <a href="https://google.com/maps" target="_blank">
+                    <img src="../assets/images/mapa_image.png" alt="mapa-image"
+                        class="h-80 border shadow-md rounded-xl hidden md:block">
+                </a>
+            </div>
+            <form action="#" method="get" class="p-5 border border-[#004346] rounded flex flex-col w-full/2" >
+                <h2 class="text-xl text-[#004346]  pb-3 ">Formulário de contato 
+                    <span class="text-sm text-[#82A3A4] p-3 border border-white border-l-[#004346]">Ficou alguma dúvida, converse diretamente conosco !</span>
+                </h2>
+                <label for="nome-usuario" class="">
+
+                    <input type="text" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="nome-usuario" placeholder="Nome:">
+                </label>
+                <label for="email">
+
+                    <input type="email" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="email" placeholder="Email:">
+                </label>
+                <label for="obs">
+                    <textarea name="obs" id=""  class="rounded-xl bg-[#004346] p-2 w-full mb-5" placeholder="Obs:"></textarea>
+
+                </label>
+                <button type="submit" class="border border-[#B0C4C5] self-center rounded-[10px] w-30 text-[#0C4C4E] text-xl p-1 flex gap-3 items-center">
+                    <div class="h-5 w-5 rounded-full border border-[#004346]"></div>
+                   <img src="   " alt="">
+                    Enviar
+                </button>
+            </form>
+        </section>
     </main>
-    <footer class=" md:grid grid-cols-4 bg-[#004346] text-white text-xl absolute bottom-0 w-full">
-        <div class=" p-5 flex flex-col justify-center">
+    <footer class=" md:grid grid-cols-4 bg-[#004346] text-white text-xl w-full">
+        <div class="text-center p-5 flex flex-col justify-center">
             <h3 class="text-2xl p-3">Empresa:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
@@ -49,7 +92,7 @@
             </ul>
 
         </div>
-        <div class=" p-5 flex flex-col justify-center">
+        <div class="text-center p-5 flex flex-col justify-center">
             <h3 class="text-2xl p-3">Acesso Rápido:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
