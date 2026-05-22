@@ -12,7 +12,7 @@
 <body>
     <header>
 
-        <nav id="colapse" class="grid grid-cols-3">
+        <nav id="colapse" class="grid grid-cols-3 nav-bar border border-white border-b-[#004346]">
             <div class="p-5">
                 Nome/Logo
             </div>
@@ -26,56 +26,111 @@
         </nav>
     </header>
     <main>
-        <section></section>
-        <section></section>
+        <section id="horario" class="flex flex-col items-center p-5 ">
+            <div class="pt-5 pb-1">
+                <h1 class="text-center text-6xl text-[#004346]">Horário de Atendimento</h1>
+                <h2 class="text-center font-medium text-lg text-[#82A3A4]">Estamos disponíveis para agendamento</h2>
+            </div>
+
+            <span class="w-1/10 border border-b-[#82A3A4] mb-5"></span>
+            <div
+                class="p-5 w-fit md:w-4/10 text-white border border-black  shadow-md rounded-xl flex justify-evenly items-center gap-10">
+                <div class="size-32 fundo-imagem-relogio">
+                </div>
+                <ul class="bg-[#004346] rounded-xl p-5 w-9/10">
+                    <li class="p-2">SDDSDFSDF</li>
+                    <li class="p-2 border border-l-[#004346] border-r-[#004346] border-t-[#82A3A4] border-b-[#82A3A4]">
+                        SDFSFSDFS</li>
+                    <li class="p-2">FSFSFSD</li>
+                </ul>
+            </div>
+        </section>
+        <section id="feedback" class="text-white bg-[#004346] md:p-10 p-5 flex justify-between gap-1 ">
+            <div class="">
+                <h1 class="text-4xl font-semibold">Feedbacks.</h1>
+                <div>
+                    <h2 class="mb-4">Quem conhece, confia.</h2>
+                    <hr class="w-30">
+                </div>
+                <ul class="p-5">
+                    <li class="mt-10">
+                        <p class="w-9/10">
+                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores ipsum in iure
+                                sit fugiat! Asperiores officiis </q>
+                            <cite class="block mt-5">-Cliente 1, 2026</cite>
+                        </p>
+                    </li>
+                    <li class="mt-10">
+                        <p class="w-9/10">
+                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores ipsum in iure
+                                sit fugiat! Asperiores officiis </q>
+                            <cite class="block mt-5">-Cliente 2, 2026</cite>
+                        </p>
+                    </li>
+                    <li class="mt-10">
+                        <p class="w-9/10">
+                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores ipsum in iure
+                                sit fugiat! Asperiores officiis </q>
+                            <cite class="block mt-5">-Cliente 3, 2026</cite>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <img src="../assets/images/img_02.png" alt="" class="hidden md:block rounded-xl size-130 md:w-25/100">
+        </section>
         <section id="contato" class="image-logo mt-10 mb-10 text-white flex flex-col items-center gap-10 p-5">
-            
-            <div class="flex justify-evenly gap-20">
-                <div class="bg-[#004346] p-8 rounded-[1vw] w-80">
-                    <h2 class="text-lg m-2">Visite-nos</h2>
+            <div class="flex justify-evenly md:gap-20 w-full md:w-fit ">
+                <div class="bg-[#004346] p-8 rounded-[1vw] w-full md:size-98 flex flex-col gap-3">
+                    <h2 class="text-xl m-2">Visite-nos</h2>
                     <address class="p-3">
-                        <h3 class="text-xl flex items-center m-1">
+                        <h3 class="text-2xl flex items-center m-1">
                             <img src="../assets/images/pin-icon.png" alt="pino-icon" class="size-6">
                             Endereço
                         </h3>
-                        <div class="text-lg">
-                            <div>Rua, número</div>
-                            <div>Bairro</div>
+                        <div class="text-xl flex flex-col gap-2">
+                            <div>
+                                <div>Rua, número</div>
+                                <div>Bairro</div>
+                            </div>
                             <div>CEP:40028922</div>
                         </div>
                     </address>
                 </div>
-                <a href="https://google.com/maps" target="_blank" class="hidden md:block">
-                    <img src="../assets/images/mapa_image.png" alt="mapa-image"
-                        class="h-80 border shadow-md rounded-xl">
+                <a href="http://google.com/maps" target="_blank" rel="noopener noreferrer" class="hidden md:inline">
+                    <img src="../assets/images/mapa_image.png" alt="mapa-imagem" class="rounded-xl size-98 w-9/10 shadow-2xl border-2 border-[#E0DFDF]">
                 </a>
+
             </div>
-            <form action="#" method="get" class="p-5 border border-[#004346] rounded flex flex-col w-full/2" >
-                <h2 class="text-xl text-[#004346]  pb-3 ">Formulário de contato 
-                    <span class="text-sm text-[#82A3A4] p-3 border border-white border-l-[#004346]">Ficou alguma dúvida, converse diretamente conosco !</span>
+            <form action="#" method="get" class="p-5 border border-[#004346] rounded flex flex-col w-full/2">
+                <h2 class="text-xl text-[#004346]  pb-3 ">Formulário de contato
+                    <span class="text-sm text-[#82A3A4] p-3 border border-white border-l-[#004346]">Ficou alguma dúvida,
+                        converse diretamente conosco !</span>
                 </h2>
                 <label for="nome-usuario" class="">
 
-                    <input type="text" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="nome-usuario" placeholder="Nome:">
+                    <input type="text" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="nome-usuario"
+                        placeholder="Nome:">
                 </label>
                 <label for="email">
 
-                    <input type="email" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="email" placeholder="Email:">
+                    <input type="email" class="rounded-xl bg-[#004346] p-2 w-full mb-5" name="email"
+                        placeholder="Email:">
                 </label>
                 <label for="obs">
-                    <textarea name="obs" id=""  class="rounded-xl bg-[#004346] p-2 w-full mb-5" placeholder="Obs:"></textarea>
+                    <textarea name="obs" id="" class="rounded-xl bg-[#004346] p-2 w-full mb-5"
+                        placeholder="Obs:"></textarea>
 
                 </label>
-                <button type="submit" class="border border-[#B0C4C5] self-center rounded-[10px] w-30 text-[#0C4C4E] text-xl p-1 flex gap-3 items-center">
-                    <div class="h-5 w-5 rounded-full border border-[#004346]"></div>
-                   <img src="   " alt="">
+                <button type="submit"
+                    class="border border-[#B0C4C5] self-center rounded-[10px] w-3/10 text-[#0C4C4E] text-xl p-1 flex gap-3 items-center justify-center">
+                    <div class="h-4 w-4 rounded-full border border-[#004346]"></div>
                     Enviar
                 </button>
             </form>
         </section>
     </main>
-    <footer class=" md:grid grid-cols-4 bg-[#004346] text-white text-xl w-full">
-        <div class="text-center p-5 flex flex-col justify-center">
+    <footer class=" md:grid grid-cols-4 bg-[#004346] text-white text-xl w-full ">
+        <div class="md:text-left text-center md:text p-5 flex flex-col justify-center">
             <h3 class="text-2xl p-3">Empresa:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
@@ -93,7 +148,7 @@
             </ul>
 
         </div>
-        <div class="text-center p-5 flex flex-col justify-center">
+        <div class="md:text-left text-center p-5 flex flex-col justify-center">
             <h3 class="text-2xl p-3">Acesso Rápido:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
@@ -114,7 +169,7 @@
             </ul>
 
         </div>
-        <div class="text-center p-5 flex flex-col justify-center ">
+        <div class="md:text-left text-center p-5 flex flex-col justify-center ">
             <h3 class="text-2xl p-3">Serviços:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
@@ -130,7 +185,7 @@
             </ul>
 
         </div>
-        <div class="text-center p-5 flex flex-col justify-center">
+        <div class="md:text-left text-center p-5 flex flex-col justify-center">
             <h3 class="text-2xl p-3">Contato:</h3>
             <ul class="h-full">
                 <li class="flex items-center gap-1">
