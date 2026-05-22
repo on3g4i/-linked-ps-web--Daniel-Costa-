@@ -9,7 +9,11 @@ body {
 input::placeholder{
     color: white;
 }
+textarea{
+    resize: none;
+}
 textarea::placeholder{
+ 
     color: white;
 }
 
@@ -66,13 +70,20 @@ textarea::placeholder{
         inset: 0;
         background-image: url("../images/bg-logo.png"), url("../images/bg-logo.png");
         background-repeat: no-repeat;
-        background-position: left top, right bottom;
+        background-position: left bottom, right top;
         z-index: -1;
         opacity: 0.3;
     }
 
     .section {
         height: 80vh;
+    }
+    #inicio{
+        background-image: url("../images/img_01.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 56vw;
+        box-shadow: 0 10px 0 0 gray;
     }
 }
 
