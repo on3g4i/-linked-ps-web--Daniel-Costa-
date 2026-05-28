@@ -9,4 +9,6 @@
 O footer e a navbar foram criados primeiros, dado à sua importância e necessidade de responsividade
 ### Imagens na versão recursiva
 Algumas imagens na versão recursiva mobile não vão ser utilizadas para manter a fluidez e interface padrão de uma aplicação dessa natureza.
+### Navbar responsiva
+Na sua versão responsiva, a área de navegação será transformada em um **hamburger menu**
 

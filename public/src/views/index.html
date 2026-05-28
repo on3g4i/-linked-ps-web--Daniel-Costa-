@@ -10,19 +10,52 @@
 </head>
 
 <body>
-    <header class="">
-        <nav id="colapse" class="grid grid-cols-3 nav-bar border border-white border-b-[#004346]">
-            <div class="p-5">
+    <header id="navigation-area">
+        <nav id="colapse" class="grid grid-cols-3 items-center px-5 border-b border-[#004346]">
+            <!-- Logo -->
+            <div class="py-5 text-xl">
                 Nome/Logo
             </div>
-            <div class=" "></div>
-            <ul class="flex justify-end p-5 gap-5">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#servico">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+
+            <div></div>
+
+            <ul class="hidden sm:flex justify-end py-5 gap-5 text-md">
+                <li><a href="#" class="hover:text-[#004346] transition-colors">Início</a></li>
+                <li><a href="#" class="hover:text-[#004346] transition-colors">Sobre</a></li>
+                <li><a href="#servico" class="hover:text-[#004346] transition-colors">Serviços</a></li>
+                <li><a href="#contato" class="hover:text-[#004346] transition-colors">Contato</a></li>
             </ul>
+
+            <!-- Botão hambúrguer (visível abaixo de sm) -->
+            <div class="flex sm:hidden justify-end py-5">
+                <button id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"
+                    class="flex flex-col gap-[5px] items-end cursor-pointer p-1 group">
+                    <span id="bar1"
+                        class="block h-[1.5px] w-[22px] bg-gray-800 rounded transition-all duration-300 origin-center"></span>
+                    <span id="bar2"
+                        class="block h-[1.5px] w-[16px] bg-gray-800 rounded transition-all duration-300"></span>
+                    <span id="bar3"
+                        class="block h-[1.5px] w-[22px] bg-gray-800 rounded transition-all duration-300 origin-center"></span>
+                </button>
+            </div>
+
         </nav>
+
+        <ul id="mobile-menu"
+            class="sm:hidden flex-col overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out border-b border-[#004346] text-md">
+            <li><a href="#"
+                    class="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 hover:text-[#004346] transition-colors">Início</a>
+            </li>
+            <li><a href="#"
+                    class="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 hover:text-[#004346] transition-colors">Sobre</a>
+            </li>
+            <li><a href="#servico"
+                    class="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 hover:text-[#004346] transition-colors">Serviços</a>
+            </li>
+            <li><a href="#contato"
+                    class="block px-6 py-4 hover:bg-gray-50 hover:text-[#004346] transition-colors">Contato</a>
+            </li>
+        </ul>
     </header>
     <main class="">
         <section id="inicio" class="section ">
@@ -148,7 +181,7 @@
                         </div>
                     </address>
                 </div>
-                <a href="http://google.com/maps" target="_blank" rel="noopener noreferrer" class="hidden md:inline">
+                <a href="http://google.com/maps" target="_blank" rel="noopener noreferrer" class="hidden md:inline ">
                     <img src="../assets/images/mapa_image.png" alt="mapa-imagem"
                         class="rounded-xl size-98 w-full shadow-2xl border-2 border-[#E0DFDF]" loading="lazy">
                 </a>
@@ -257,7 +290,7 @@
 
         </div>
     </footer>
-    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/scripts.js" type="module"></script>
 </body>
 
 </html>
