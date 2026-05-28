@@ -1,5 +1,7 @@
 # Projeto de entrada na linked, por Daniel Costa de Faria
 ## Breve Descrição do Projeto
+O projeto da landing page para psicologos foi criado baseando-se no projeto previamente desenvolvido no figma.
+A subdivisão de arquivos básica permite uma organização facilitada  
 ## Tecnologias e ferramentas utilizadas
     -HTML5
     -CSS3 e talwind
