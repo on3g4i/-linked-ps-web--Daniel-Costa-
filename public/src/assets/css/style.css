@@ -3,17 +3,20 @@ body {
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
-    font-family: 'Inria Serif','Times New Roman', Times, serif;
+    font-family: 'Inria Serif', 'Times New Roman', Times, serif;
 
 }
-input::placeholder{
+
+input::placeholder {
     color: white;
 }
-textarea{
+
+textarea {
     resize: none;
 }
-textarea::placeholder{
- 
+
+textarea::placeholder {
+
     color: white;
 }
 
@@ -40,7 +43,7 @@ textarea::placeholder{
     }
 
     .section {
-        height: 60vh;
+        height: 70vh;
     }
 }
 
@@ -80,12 +83,53 @@ textarea::placeholder{
     .section {
         height: 90vh;
     }
-    #inicio{
+
+    #inicio {
         background-image: url("../images/img_01.png");
         background-repeat: no-repeat;
         background-position: right;
-        background-size: 50vw;
-        box-shadow: 0 10px 0 0 gray;
+        background-size: contain;
+    }
+
+    .shapedividers_com-438 {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .shapedividers_com-438::before {
+        content: '';
+        font-family: 'shape divider from ShapeDividers.com';
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 200px 200%;
+        background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M1 35.28c.8-3.17-.38-7.3-.55-10.04-.17-2.76 1.47-9.25 1.3-12.68C1.58 9.14.91 7.92.88 5.52.86 3.12 1.76 0 1.76 0H0v35.28z" fill="%23fff"/></svg>');
+    }
+    .shapedividers_com-438-opacity {
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .shapedividers_com-438-opacity::before {
+        content: '';
+        font-family: 'shape divider from ShapeDividers.com';
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 200px 200%;
+        opacity: 0.3;
+        
+        background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M1 35.28c.8-3.17-.38-7.3-.55-10.04-.17-2.76 1.47-9.25 1.3-12.68C1.58 9.14.91 7.92.88 5.52.86 3.12 1.76 0 1.76 0H0v35.28z" fill="gray"/></svg>');
     }
 }
 
@@ -113,9 +157,11 @@ textarea::placeholder{
     background-position: center;
     background-size: contain;
 }
-.nav-bar{
+
+.nav-bar {
     font-family: Arial, Helvetica, sans-serif;
 }
-.list-style-feedbacks{
+
+.list-style-feedbacks {
     list-style: disc;
 }
